@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= profile.name %>의 프로필</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <h1><%= profile.name %></h1>
+
+        <p class="intro">
+            <%= profile.intro %>
+        </p>
+
+        <div class="info" onclick="showComputer()">
+            <h2>전공</h2>
+            <p><%= profile.major %></p>
+            <p class="click-text">클릭해보세요!</p>
+        </div>
+
+        <div id="computer">
+            <img src="/images/computer.jpg" alt="컴퓨터 사진">
+        </div>
+
+        <div class="info">
+            <h2>취미</h2>
+            <p><%= profile.hobby %></p>
+        </div>
+
+        <div class="info">
+            <h2>좋아하는 것</h2>
+            <p><%= profile.favorite %></p>
+        </div>
+
+    </div>
+
+    <script>
+        function showComputer() {
+            const computer = document.getElementById('computer');
+
+            if (computer.style.display === 'block') {
+                computer.style.display = 'none';
+            } else {
+                computer.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

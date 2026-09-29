@@ -1,0 +1,55 @@
+body {
+    background-color: #e8f6ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+}
+
+.profile {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #b8e6c1;
+}
+
+h1 {
+    color: #5aa9e6;
+}
+
+.intro {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.info {
+    background-color: #effbea;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info h2 {
+    color: #5a9c68;
+    margin: 5px;
+}
+
+.info p {
+    margin: 8px;
+}
+.click-text {
+    font-size: 13px;
+    color: #777;
+}
+
+#computer {
+    display: none;
+    margin: 15px 0;
+}
+
+#computer img {
+    width: 300px;
+    border-radius: 10px;
+}
